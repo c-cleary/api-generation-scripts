@@ -12,7 +12,7 @@ msg_xdoclint_option = "Xdoclint option to use. Enable or disable specific checks
 env_jdk_src_dir = ""
 env_api_build_dir = ""
 env_modules = []
-env_xdoclint_option = ""
+env_xdoclint_options = []
 
 
 def arg_parser():
