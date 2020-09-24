@@ -16,7 +16,7 @@
 -taglet build.tools.taglet.ToolGuide -tag since -tag serialData -tag factory -tag see -taglet build.tools.taglet.ExtLink \
 -taglet build.tools.taglet.Incubating -taglet build.tools.taglet.Preview \
 -tagletpath $2/buildtools/jdk_tools_classes \
---module-source-path "$2/support/gensrc/*:$1/*/linux/classes:$1/*/linux/classes:$1/*/unix/classes:$1/*/unix/classes:$1/*/share/classes:$1/*/share/classes" \
+--module-source-path "$2/support/gensrc/*:$1/*/aix/classes:$1/*/linux/classes:$1/*/macosx/classes:$1/*/unix/classes:$1/*/windows/classes:$1/*/share/classes" \
 --module $3 \
 -Xdoclint:$4, -Xdoclint/package:-org.w3c.* \
 -doctitle 'Java<sup>&reg;</sup> Platform, Standard Edition &amp;&nbsp;Java&nbsp;Development&nbsp;Kit<br>Version 26 API Specification' \
@@ -25,4 +25,4 @@
 -top '<div style="padding: 6px; text-align: center; font-size: 80%; font-family: DejaVu Sans, Arial, Helvetica, sans-serif; font-weight: normal;">This specification is not final and is subject to change. Use is subject to <a href="https://www.oracle.com/java/javase/terms/license/java16speclicense.html">license terms</a>.</div>' \
 -overview $2/support/docs/JDK_API-overview.html \
 -group "Java SE" "java.base:java.compiler:java.datatransfer:java.desktop:java.instrument:java.logging:java.management:java.management.rmi:java.naming:java.net.http:java.prefs:java.rmi:java.scripting:java.se:java.security.jgss:java.security.sasl:java.sql:java.sql.rowset:java.transaction.xa:java.xml:java.xml.crypto" \
--group "JDK" "jdk.*" -Xmaxerrs 99999 -Xmaxwarns 99999 -quiet
+-group "JDK" "jdk.*" -Xmaxerrs 99999 -Xmaxwarns 1 -quiet
